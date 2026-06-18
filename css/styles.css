@@ -148,7 +148,7 @@ p  { margin: 0 0 1rem; }
 .cards-2 { grid-template-columns: repeat(2, 1fr); }
 .cards-3 { grid-template-columns: repeat(3, 1fr); }
 .card {
-  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--white); color: var(--slate); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 2.25rem 2rem; box-shadow: var(--shadow); display: flex; flex-direction: column;
   transition: transform .2s ease, box-shadow .2s ease;
 }
@@ -210,7 +210,7 @@ p  { margin: 0 0 1rem; }
 .contact-list a { color: var(--slate); font-weight: 600; }
 .contact-list a:hover { color: var(--blue); }
 
-.contact-form-wrap { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.25rem; box-shadow: var(--shadow); }
+.contact-form-wrap { background: var(--white); color: var(--slate); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.25rem; box-shadow: var(--shadow); }
 .contact-form { display: grid; gap: 1.1rem; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
 .form-field { display: grid; gap: .35rem; }
@@ -290,15 +290,22 @@ p  { margin: 0 0 1rem; }
    ========================================================= */
 
 /* ---- Service groups ---- */
-.service-group { margin-top: clamp(2.75rem, 5vw, 4.5rem); }
+.service-group { margin-top: clamp(4rem, 8vw, 7rem); }
 .service-group:first-of-type { margin-top: 0; }
-.group-head { text-align: center; margin-bottom: 2rem; }
+.group-head { text-align: center; margin-bottom: 2.75rem; }
 .group-label {
-  display: inline-block; text-transform: uppercase; letter-spacing: .1em;
-  font-size: .78rem; font-weight: 700; color: var(--blue);
-  background: rgba(32,112,175,.08); padding: .35rem 1rem; border-radius: 999px; margin-bottom: .85rem;
+  display: inline-block; text-transform: uppercase; letter-spacing: .15em;
+  font-size: .9rem; font-weight: 800; color: var(--blue);
+  background: rgba(32,112,175,.1); padding: .45rem 1.25rem; border-radius: 999px; margin-bottom: 1rem;
 }
-.group-title { font-size: clamp(1.3rem, 2.5vw, 1.7rem); color: var(--ink); margin: 0; }
+.group-title {
+  font-size: clamp(1.7rem, 3.2vw, 2.2rem); font-weight: 800; color: var(--ink);
+  margin: 0; padding-bottom: .7rem; position: relative;
+}
+.group-title::after {
+  content: ""; display: block; width: 64px; height: 4px; border-radius: 2px;
+  background: var(--sky); margin: .7rem auto 0;
+}
 
 /* ---- Card title + tagline (higher specificity than base h4) ---- */
 .card .card-title { font-size: 1.3rem; color: var(--ink); margin: 0 0 .15rem; }
@@ -320,25 +327,26 @@ p  { margin: 0 0 1rem; }
 .ai-note-icon { flex: 0 0 auto; color: var(--blue); margin-top: 1px; }
 .ai-note a { font-weight: 600; white-space: nowrap; }
 
-/* ---- Why TechStratus ---- */
-.why { position: relative; overflow: hidden; }
-.hex-decor { position: absolute; inset: 0; pointer-events: none; color: var(--sky); opacity: .13; }
-.hex-decor svg:nth-child(1) { position: absolute; top: -46px; right: -54px; }
-.hex-decor svg:nth-child(2) { position: absolute; bottom: -40px; left: -44px; }
-.why .container { position: relative; z-index: 1; }
-
+/* ---- Why TechStratus (commitment cards) ---- */
 .commitments {
-  list-style: none; padding: 0; margin: 0 auto; max-width: 1000px;
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.9rem 2rem;
+  list-style: none; padding: 0; margin: 0 auto; max-width: 1040px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem;
 }
-.commitment { display: flex; gap: .9rem; align-items: flex-start; }
-.commitment h3 { font-size: 1.1rem; color: var(--ink); margin: 0 0 .25rem; }
-.commitment p { color: var(--muted); margin: 0; font-size: .97rem; line-height: 1.5; }
-.hex-bullet {
-  flex: 0 0 22px; width: 22px; height: 25px; margin-top: 3px;
-  background: linear-gradient(135deg, var(--blue), var(--sky));
+.commitment {
+  background: var(--white); color: var(--slate);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 2rem 1.75rem; box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.commitment:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.commitment-icon {
+  display: grid; place-items: center; width: 58px; height: 58px; margin-bottom: 1.1rem;
+  background: linear-gradient(135deg, var(--blue), var(--sky)); color: #fff;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  filter: drop-shadow(0 8px 16px rgba(32,112,175,.25));
 }
+.commitment h3 { font-size: 1.18rem; color: var(--ink); margin: 0 0 .4rem; }
+.commitment p { color: var(--muted); margin: 0; font-size: .97rem; line-height: 1.55; }
 .brand-promise {
   text-align: center; max-width: 780px; margin: clamp(2.5rem, 5vw, 3.5rem) auto 0;
   font-size: clamp(1.2rem, 2.4vw, 1.6rem); font-weight: 700; color: var(--blue); line-height: 1.4;
@@ -360,3 +368,35 @@ p  { margin: 0 0 1rem; }
   .ai-note { flex-direction: column; }
   .ai-note a { white-space: normal; }
 }
+
+/* =========================================================
+   Alternating blue sections (white -> TechStratus Blue)
+   Section order: About(white) · Services(blue) · Why(white)
+   · How It Works(blue) · FAQ(white) · Contact(blue)
+   ========================================================= */
+.section-blue { background: var(--blue); color: #fff; }
+.section-blue .section-head h2 { color: #fff; }
+.section-blue .section-head p { color: rgba(255,255,255,.9); }
+
+/* Service-group headings on blue */
+.section-blue .group-label { background: rgba(255,255,255,.16); color: #fff; }
+.section-blue .group-title { color: #fff; }
+
+/* Responsible-AI note on blue */
+.section-blue .ai-note { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.3); color: rgba(255,255,255,.95); }
+.section-blue .ai-note-icon { color: #fff; }
+.section-blue .ai-note a { color: #fff; text-decoration: underline; }
+
+/* How It Works on blue — white hexagons with blue icons */
+.section-blue .step-icon { background: #fff; color: var(--blue); filter: drop-shadow(0 10px 22px rgba(0,0,0,.18)); }
+.section-blue .step-num { color: var(--sky); }
+.section-blue .step h3 { color: #fff; }
+.section-blue .step p { color: rgba(255,255,255,.85); }
+
+/* Contact on blue (the form card stays white) */
+.section-blue .contact-info h2 { color: #fff; }
+.section-blue .contact-info > p { color: rgba(255,255,255,.9); }
+.section-blue .contact-list li { color: #fff; }
+.section-blue .contact-list a { color: #fff; }
+.section-blue .contact-list a:hover { color: var(--sky); }
+.section-blue .contact-ico { background: #fff; color: var(--blue); }
