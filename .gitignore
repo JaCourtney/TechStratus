@@ -5,6 +5,10 @@ node_modules/
 .wrangler/
 .dev.vars
 
+# Internal brand/strategy docs — keep out of GitHub (may be a public repo)
+TechStratus Brand & Marketing Overview.pdf
+*.pdf
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db
