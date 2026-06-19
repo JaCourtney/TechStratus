@@ -126,13 +126,7 @@ p  { margin: 0 0 1rem; }
 }
 
 /* ---------- Sections ---------- */
-.section {
-  padding: clamp(3.5rem, 7vw, 6rem) 0;
-  background-color: var(--bg);
-  background-image: url("../assets/hexes-white.png");
-  background-repeat: repeat;
-  background-blend-mode: multiply;
-}
+.section { padding: clamp(3.5rem, 7vw, 6rem) 0; }
 .section-alt { background: var(--bg-alt); }
 .section-head { text-align: center; max-width: 720px; margin: 0 auto clamp(2rem, 4vw, 3.5rem); }
 .section-head p { font-size: 1.15rem; color: var(--muted); margin: 0; }
@@ -234,13 +228,7 @@ p  { margin: 0 0 1rem; }
 .form-note.err { color: #b91c1c; }
 
 /* ---------- Footer ---------- */
-.site-footer {
-  background-color: var(--blue);
-  background-image: url("../assets/hexes-blue.png");
-  background-repeat: repeat;
-  background-blend-mode: screen;
-  color: #fff; padding: 3rem 0;
-}
+.site-footer { background: var(--blue); color: #fff; padding: 3rem 0; }
 .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; text-align: center; }
 .footer-brand img { width: 96px; height: auto; }
 .footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
@@ -387,13 +375,7 @@ p  { margin: 0 0 1rem; }
    Section order: About(white) · Services(blue) · Why(white)
    · How It Works(blue) · FAQ(white) · Contact(blue)
    ========================================================= */
-.section-blue {
-  background-color: var(--blue);
-  background-image: url("../assets/hexes-blue.png");
-  background-repeat: repeat;
-  background-blend-mode: screen;
-  color: #fff;
-}
+.section-blue { background: var(--blue); color: #fff; }
 .section-blue .section-head h2 { color: #fff; }
 .section-blue .section-head p { color: rgba(255,255,255,.9); }
 
