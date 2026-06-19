@@ -135,7 +135,7 @@ p  { margin: 0 0 1rem; }
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--gap); align-items: center; }
 .about-media { display: flex; justify-content: center; }
-.about-media img { width: min(340px, 80%); filter: drop-shadow(0 18px 40px rgba(32,112,175,.22)); }
+.about-media img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 18px 40px rgba(32,112,175,.18); }
 .area-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
 .area-list li {
   background: var(--white); border: 1px solid var(--border); color: var(--slate);
@@ -400,3 +400,7 @@ p  { margin: 0 0 1rem; }
 .section-blue .contact-list a { color: #fff; }
 .section-blue .contact-list a:hover { color: var(--sky); }
 .section-blue .contact-ico { background: #fff; color: var(--blue); }
+
+/* White hover shadow so the card lift reads against the blue background */
+.section-blue .card:hover,
+.section-blue .faq-item:hover { box-shadow: 0 16px 40px rgba(255,255,255,.5); }
