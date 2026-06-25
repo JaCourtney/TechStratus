@@ -63,7 +63,7 @@
         return;
       }
       note.className = "form-note ok";
-      note.textContent = "Thanks! This form isn't connected yet — for now, please call or email us and we'll get right back to you.";
+      note.textContent = "Thanks! This form isn't connected yet. For now, please call or email us and we'll get right back to you.";
       form.reset();
     });
   }
