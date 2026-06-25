@@ -4,11 +4,10 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
+  # HTML/CSS/JS revalidate on every load so edits appear immediately.
+  # (We have no filename hashing, so long-caching these would serve stale files.)
+  Cache-Control: no-cache
 
-# Cache static assets aggressively (they're versioned by content rarely changing)
+# Images and video rarely change — safe to cache for a day.
 /assets/*
-  Cache-Control: public, max-age=31536000, immutable
-/css/*
-  Cache-Control: public, max-age=86400
-/js/*
   Cache-Control: public, max-age=86400
