@@ -90,8 +90,8 @@ p  { margin: 0 0 1rem; }
 .brand-logo { width: 42px; height: 42px; object-fit: contain; }
 .brand-name { font-size: 1.35rem; letter-spacing: -.02em; }
 
-.nav-menu { list-style: none; display: flex; align-items: center; gap: 1.75rem; margin: 0; padding: 0; }
-.nav-menu a { color: var(--slate); font-weight: 600; font-size: .98rem; }
+.nav-menu { list-style: none; display: flex; align-items: center; gap: 1.25rem; margin: 0; padding: 0; }
+.nav-menu a { color: var(--slate); font-weight: 600; font-size: .95rem; }
 .nav-menu a:hover { color: var(--blue); }
 .nav-cta a { color: #fff; }
 
@@ -258,7 +258,7 @@ p  { margin: 0 0 1rem; }
   .steps { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .nav-toggle { display: flex; }
   .nav-menu {
     position: absolute; top: 72px; left: 0; right: 0;
@@ -405,3 +405,43 @@ p  { margin: 0 0 1rem; }
 /* White hover shadow so the card lift reads against the blue background */
 .section-blue .card:hover,
 .section-blue .faq-item:hover { box-shadow: 0 16px 40px rgba(255,255,255,.5); }
+
+/* =========================================================
+   Multi-page navigation: dropdown, active state, page title band
+   ========================================================= */
+.nav-menu a.active { color: var(--blue); }
+
+.has-dropdown { position: relative; }
+.has-dropdown > a { display: inline-flex; align-items: center; gap: .3rem; }
+.caret { font-size: .7em; line-height: 1; }
+.dropdown {
+  list-style: none; margin: 0; padding: .4rem;
+  position: absolute; top: 100%; left: 0; min-width: 230px;
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  opacity: 0; visibility: hidden; transform: translateY(8px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s;
+  z-index: 200;
+}
+.has-dropdown:hover > .dropdown,
+.has-dropdown:focus-within > .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+.dropdown a { display: block; padding: .6rem .8rem; border-radius: 6px; font-size: .95rem; color: var(--slate); white-space: nowrap; }
+.dropdown a:hover { background: var(--bg-alt); color: var(--blue); }
+
+/* Blank / placeholder page title band */
+.page-hero {
+  min-height: 44vh; display: flex; align-items: center;
+  padding-top: clamp(3rem, 6vw, 5rem); padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+.page-hero h1 { margin: 0; }
+
+/* Mobile: dropdown shows inline inside the open menu (matches nav breakpoint) */
+@media (max-width: 1080px) {
+  .dropdown {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    box-shadow: none; border: none; border-left: 2px solid var(--border);
+    border-radius: 0; margin: .25rem 0 .5rem .25rem; padding: 0 0 0 .8rem; min-width: 0;
+  }
+  .caret { display: none; }
+  .dropdown a { padding: .5rem 0; }
+}
