@@ -81,6 +81,10 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Worked "tech support" into both pages' meta descriptions to match the new
+  naming, and trimmed the intro paragraph + "Common challenges include"
+  eyebrow from the top of each Common Challenges section (goes straight from
+  heading/photo to the checklist now — those sections were feeling full).
 - Renamed "Senior Support" → "Senior Tech Support" and "Family Support" →
   "Family Tech Support" site-wide (nav, page titles, H1s, card labels, CTA
   buttons) for SEO. URLs (`senior-support.html` / `family-support.html`)
