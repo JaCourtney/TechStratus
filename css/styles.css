@@ -445,3 +445,66 @@ p  { margin: 0 0 1rem; }
   .caret { display: none; }
   .dropdown a { padding: .5rem 0; }
 }
+
+/* =========================================================
+   Landing-page hero (title + sub-headline + button row, no video)
+   ========================================================= */
+.mini-hero {
+  text-align: center;
+  background: linear-gradient(160deg, var(--bg-alt), #fff);
+  padding-top: clamp(4rem, 8vw, 6rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+.mini-hero-content { max-width: 720px; margin: 0 auto; }
+.mini-hero-sub {
+  font-size: clamp(1.1rem, 2vw, 1.35rem); color: var(--blue); font-weight: 600;
+  margin: .25rem 0 1.75rem;
+}
+
+/* =========================================================
+   Common-services tile grid (compact icon + label cards)
+   ========================================================= */
+.tile-grid {
+  list-style: none; padding: 0; margin: 0 auto; max-width: 1100px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
+}
+.tile {
+  background: var(--white); color: var(--slate);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.75rem 1.25rem; text-align: center; box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.tile-icon {
+  width: 52px; height: 52px; margin: 0 auto .9rem;
+  display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--blue), var(--sky)); color: #fff;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  filter: drop-shadow(0 8px 16px rgba(32,112,175,.25));
+}
+.tile h3 { font-size: 1rem; margin: 0; color: var(--ink); }
+.section-blue .tile:hover { box-shadow: 0 16px 40px rgba(255,255,255,.5); }
+
+/* =========================================================
+   Why section, 5-card responsive variant (distinct from the
+   homepage's fixed 3-column .commitments grid)
+   ========================================================= */
+.why-grid {
+  list-style: none; padding: 0; margin: 0 auto; max-width: 1040px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.75rem;
+  justify-content: center;
+}
+
+/* =========================================================
+   Closing call-to-action band
+   ========================================================= */
+.cta-section { text-align: center; }
+.cta-section h2 { margin-bottom: 1.5rem; }
+
+/* ---- Responsive (landing-page components) ---- */
+@media (max-width: 900px) {
+  .tile-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 540px) {
+  .tile-grid { grid-template-columns: 1fr; }
+}
