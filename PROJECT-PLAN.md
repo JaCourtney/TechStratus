@@ -81,6 +81,13 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Trimmed two of the four flip cards further: shortened the Scam and Online
+  Safety Assistance narrative; removed 2 items from its back list (9 -> 7)
+  and 1 item from Device and Account Organization's (9 -> 8); both trimmed
+  lists now centered as a block (new `.checklist-centered` modifier, scoped
+  to just these two) rather than stretching full-width. Also trimmed a
+  couple of words from Support for Adult Children Coordinating Care's two
+  narrative paragraphs.
 - Flip-card follow-up tweaks: card titles are bigger and blue (matching the
   hero heading); front now ends with a blue "Click to See How We Help" hint
   (reuses `.eyebrow` styling); removed the closing italic sentence from each
