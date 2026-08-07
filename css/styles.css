@@ -500,6 +500,10 @@ p  { margin: 0 0 1rem; }
    ========================================================= */
 .cta-section { text-align: center; }
 .cta-section h2 { margin-bottom: 1.5rem; }
+.cta-section .hero-actions { margin-top: 1.5rem; }
+
+/* Centered heading above a split image+text hero (e.g. Senior Support) */
+.split-hero-heading { text-align: center; max-width: 900px; margin: 0 auto 2.5rem; }
 
 /* ---- Responsive (landing-page components) ---- */
 @media (max-width: 900px) {
