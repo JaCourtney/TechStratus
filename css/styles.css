@@ -109,7 +109,6 @@ p  { margin: 0 0 1rem; }
   color: var(--slate); overflow: hidden; text-align: center;
 }
 .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-.hero-bg-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
 .hero-overlay {
   position: absolute; inset: 0; z-index: -1;
   background: linear-gradient(160deg, rgba(255,255,255,.9), rgba(255,255,255,.78));

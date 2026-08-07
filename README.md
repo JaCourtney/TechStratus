@@ -51,56 +51,8 @@ npx wrangler pages deploy . --project-name techstratus
 
 ## To do
 
-### Blocking / functional
-- [ ] **Connect the contact form.** It currently shows a placeholder message
-      instead of actually sending anything. Easiest option:
-      [Formspree](https://formspree.io) — create a form, then set
-      `<form action="https://formspree.io/f/XXXX" method="POST">` in
-      `contact.html` and remove the `e.preventDefault()` handling in `js/main.js`.
-- [ ] **Point `techstratus.com` at Cloudflare Pages.** Still on the old
-      WordPress host. Need to confirm whether the domain's DNS is already on
-      Cloudflare or managed elsewhere (e.g. Hostinger) before doing this.
-
-### Content still needed (blank pages)
-- [ ] Home Office Support (last of the 3 Personal Technology subpages)
-- [ ] Business Solutions overview + its 4 subpages (Business IT Services,
-      Digital Presence, AI & Automation, Technology Consulting)
-- [ ] About
-- [ ] Contact (currently just a title band — the real contact info/form still
-      lives on Home; decide whether to move it here)
-- [ ] Resources overview + its 4 subpages (FAQ, Technology Guides, Blog,
-      Support Resources)
-- [ ] **Blog specifically**: once there's more than one post, hand-coded HTML
-      pages get tedious to maintain — worth a simpler approach (templating or
-      a lightweight generator) before writing much content there.
-
-### Polish / cleanup
-- [ ] **Compress images/video** — several assets are large for the web:
-      `assets/Stock.png` (~2.9 MB), `assets/hero-video.mp4` (2.4 MB),
-      `assets/home-tech.png` (1.7 MB), `assets/senior-support-hero.png` (1.9 MB),
-      `assets/family-support-hero.png` (1.8 MB). Worth a batch pass to shrink
-      these (WebP/optimized MP4) for page speed.
-- [ ] **Favicon visibility** — `assets/logo-white.png` is set as the browser-tab
-      icon, but it's a white shape on a transparent background, so it may be
-      invisible on light-colored tabs. Consider the colored logo instead, or a
-      white logo on a small blue background tile.
-- [ ] Family Support hero photo is dark/warm-toned; under the white overlay it
-      may read as too faded — an easy opacity tweak if so.
-- [ ] "Smart-Home Support" tile icon (Personal Technology page) is a generic
-      house icon since no dedicated smart-home icon existed; swap for something
-      more distinctive if desired.
-- [ ] Unused CSS: the old homepage "How It Works" step styles are still in
-      `styles.css` even though that section was removed from `index.html`.
-      Harmless, but could be deleted for a tidier file.
-
-### Decisions made along the way (revisit if wrong)
-- All "Request Support / Schedule a Consultation / Contact TechStratus"-style
-  buttons on Personal Technology, Senior Support, and Family Support currently
-  point to `contact.html` — there's no separate booking/request system yet.
-- Family Support has "Home Network and Wi-Fi Support" as both a short card
-  (Services Offered) and its own deeper section later — kept exactly as
-  written since the source content repeated it, but flagging in case it was
-  meant to be one or the other.
+See **[PROJECT-PLAN.md](PROJECT-PLAN.md)** — the full site map (which pages are
+built vs. still blank) and the running punch list live there now, not here.
 
 ## Contact info on the site
 
