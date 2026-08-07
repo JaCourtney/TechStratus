@@ -81,6 +81,17 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- **Experiment** on Senior Tech Support: merged the four stacked sections
+  (Patient Technology Instruction, Scam and Online Safety Assistance, Device
+  and Account Organization, Support for Adult Children Coordinating Care)
+  into one blue section with a 2x2 grid of flip cards. Front = title +
+  narrative; back (on hover/focus) = the lead-in label, checklist, and
+  closing italic line. New `.flip-grid`/`.flip-card` CSS.
+  Saved a restore point before making this change: git tag
+  `senior-support-before-flip-cards` (revert with
+  `git checkout senior-support-before-flip-cards -- senior-support.html`).
+  Known limitation: hover doesn't work well on touch devices (tap-to-flip
+  behavior varies by mobile browser) — worth a JS fallback if this sticks.
 - Worked "tech support" into both pages' meta descriptions to match the new
   naming, and trimmed the intro paragraph + "Common challenges include"
   eyebrow from the top of each Common Challenges section (goes straight from
