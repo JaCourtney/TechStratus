@@ -10,8 +10,8 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 - **Home** (`index.html`) — ✅
 - **Personal Technology** (`personal-technology.html`) — ✅
-  - Senior Support (`senior-support.html`) — ✅
-  - Family Support (`family-support.html`) — ✅
+  - Senior Tech Support (`senior-support.html`) — ✅
+  - Family Tech Support (`family-support.html`) — ✅
   - Home Office Support (`home-office-support.html`) — ⬜
 - **Business Solutions** (`business-solutions.html`) — ⬜
   - Business IT Services (`business-it-services.html`) — ⬜
@@ -67,13 +67,13 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ### Decisions made along the way (revisit if wrong)
 - All "Request Support / Schedule a Consultation / Contact TechStratus"-style
-  buttons on Personal Technology, Senior Support, and Family Support currently
+  buttons on Personal Technology, Senior Tech Support, and Family Tech Support currently
   point to `contact.html` — there's no separate booking/request system yet.
-- Family Support has "Home Network and Wi-Fi Support" as both a short card
+- Family Tech Support has "Home Network and Wi-Fi Support" as both a short card
   (Services Offered) and its own deeper section later — kept exactly as
   written since the source content repeated it, but flagging in case it was
   meant to be one or the other.
-- Family Support's hero now uses the same looping video as Home (was briefly
+- Family Tech Support's hero now uses the same looping video as Home (was briefly
   a static photo of a teenager on a phone). That photo is now used instead
   in the "Common Challenges Families Face" section (image + text/checklist
   side by side) as an experiment — was a fairly full section already, so
@@ -81,17 +81,22 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
-- Built Home, Personal Technology, Senior Support, Family Support pages.
+- Renamed "Senior Support" → "Senior Tech Support" and "Family Support" →
+  "Family Tech Support" site-wide (nav, page titles, H1s, card labels, CTA
+  buttons) for SEO. URLs (`senior-support.html` / `family-support.html`)
+  were left as-is — only visible text changed; revisit if the slugs should
+  match too.
+- Built Home, Personal Technology, Senior Tech Support, Family Tech Support pages.
 - Restructured nav into Personal Technology / Business Solutions / Resources
   dropdowns, each with subpages (all currently blank except the three above).
-- Family Support hero: photo → matched Home's white-overlay treatment →
+- Family Tech Support hero: photo → matched Home's white-overlay treatment →
   switched to Home's actual looping video background.
-- Senior Support hero rebuilt to match Family Support's pattern: short H1
-  ("Senior Support") + subheadline (the old long headline) + same looping
-  video background as Home/Family Support. Both pages' hero H1s now use the
+- Senior Tech Support hero rebuilt to match Family Tech Support's pattern: short H1
+  ("Senior Tech Support") + subheadline (the old long headline) + same looping
+  video background as Home/Family Tech Support. Both pages' hero H1s now use the
   same blue as "Technology" on Home's headline (new `.hero-title-accent`
   class, scoped so Home's two-tone headline is untouched).
-- Moved the Senior Support hero photo down into "Common Challenges Seniors
+- Moved the Senior Tech Support hero photo down into "Common Challenges Seniors
   Face" (same image + text/checklist side-by-side treatment as Family
   Support's Common Challenges section).
 - Fixed a real readability bug: on blue-background sections, plain text,
