@@ -81,6 +81,14 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Flip-card follow-up tweaks: card titles are bigger and blue (matching the
+  hero heading); front now ends with a blue "Click to See How We Help" hint
+  (reuses `.eyebrow` styling); removed the closing italic sentence from each
+  back; back checklists switched from a 2-column CSS grid to a balanced
+  multi-column flow so odd-numbered lists (9 items, 3 of the 4 cards) don't
+  leave a gap in the last row. Note: true equal-count columns aren't
+  possible for 9 items without adding/trimming a real list item — flagged
+  to the user rather than done unilaterally.
 - **Experiment** on Senior Tech Support: merged the four stacked sections
   (Patient Technology Instruction, Scam and Online Safety Assistance, Device
   and Account Organization, Support for Adult Children Coordinating Care)

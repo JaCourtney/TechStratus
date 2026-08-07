@@ -549,16 +549,25 @@ p  { margin: 0 0 1rem; }
   border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow);
   background: var(--white); color: var(--slate); overflow-y: auto;
 }
-.flip-card-front { display: flex; flex-direction: column; justify-content: center; text-align: center; }
-.flip-card-front h3 { color: var(--ink); margin: 0 0 .75rem; font-size: 1.3rem; }
+.flip-card-front { display: flex; flex-direction: column; text-align: center; }
+.flip-card-front-content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.flip-card-front h3 { color: var(--blue); margin: 0 0 .75rem; font-size: 1.6rem; }
 .flip-card-front p { margin: 0 0 .6rem; }
 .flip-card-front p:last-child { margin-bottom: 0; }
+.flip-card-front .flip-hint { margin: 1rem 0 0; }
 .flip-card-back { transform: rotateY(180deg); }
+
+/* Balanced two-column checklist on the back: clean top-to-bottom columns
+   instead of a row-major grid (which leaves a gap when the count is odd) */
+.flip-card-back .checklist-2col {
+  display: block; column-count: 2; column-gap: 1.75rem;
+}
+.flip-card-back .checklist-2col li { break-inside: avoid; margin-bottom: .6rem; }
 
 /* Text inside the (white) flip-card faces stays dark even on a blue section */
 .section-blue .flip-card-front p,
-.section-blue .flip-card-back .checklist li,
-.section-blue .flip-card-back .muted-line { color: var(--slate); }
+.section-blue .flip-card-back .checklist li { color: var(--slate); }
+.section-blue .flip-card-front .eyebrow,
 .section-blue .flip-card-back .eyebrow { color: var(--blue); }
 
 @media (max-width: 700px) {
