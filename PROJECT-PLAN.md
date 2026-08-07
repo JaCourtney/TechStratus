@@ -86,3 +86,17 @@ Legend: ✅ built out · ⬜ blank stub (title only)
   dropdowns, each with subpages (all currently blank except the three above).
 - Family Support hero: photo → matched Home's white-overlay treatment →
   switched to Home's actual looping video background.
+- Senior Support hero rebuilt to match Family Support's pattern: short H1
+  ("Senior Support") + subheadline (the old long headline) + same looping
+  video background as Home/Family Support. Both pages' hero H1s now use the
+  same blue as "Technology" on Home's headline (new `.hero-title-accent`
+  class, scoped so Home's two-tone headline is untouched).
+- Moved the Senior Support hero photo down into "Common Challenges Seniors
+  Face" (same image + text/checklist side-by-side treatment as Family
+  Support's Common Challenges section).
+- Fixed a real readability bug: on blue-background sections, plain text,
+  "eyebrow" labels, and checklist items that sit directly on the blue
+  background (not inside a white card/FAQ box) were using their normal dark
+  colors — including `.eyebrow`, which was blue-on-blue and essentially
+  invisible. All of that now turns white on blue sections; text inside
+  white cards/FAQ items is unaffected. Checkmark bullets unchanged.
