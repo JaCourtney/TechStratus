@@ -52,9 +52,8 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 - [ ] **Compress images/video** — several assets are large for the web:
       `assets/Stock.png` (~2.9 MB), `assets/hero-video.mp4` (2.4 MB),
       `assets/home-tech.png` (1.7 MB), `assets/senior-support-hero.png` (1.9 MB),
-      `assets/family-support-hero.png` (1.8 MB, currently unused after the hero
-      switched to video — see log below). Worth a batch pass to shrink these
-      (WebP/optimized MP4) for page speed.
+      `assets/family-support-hero.png` (1.8 MB). Worth a batch pass to shrink
+      these (WebP/optimized MP4) for page speed.
 - [ ] **Favicon visibility** — `assets/logo-white.png` is set as the browser-tab
       icon, but it's a white shape on a transparent background, so it may be
       invisible on light-colored tabs. Consider the colored logo instead, or a
@@ -75,8 +74,10 @@ Legend: ✅ built out · ⬜ blank stub (title only)
   written since the source content repeated it, but flagging in case it was
   meant to be one or the other.
 - Family Support's hero now uses the same looping video as Home (was briefly
-  a static photo of a teenager on a phone; that photo is unused for now,
-  still sitting in `assets/family-support-hero.png`).
+  a static photo of a teenager on a phone). That photo is now used instead
+  in the "Common Challenges Families Face" section (image + text/checklist
+  side by side) as an experiment — was a fairly full section already, so
+  worth a look to see if it feels too dense.
 
 ## Change log
 
