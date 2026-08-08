@@ -569,7 +569,9 @@ p  { margin: 0 0 1rem; }
 
 /* Trimmed lists (fewer items) sit centered as a block rather than
    stretching edge-to-edge in the card */
-.flip-card-back .checklist-centered { max-width: 80%; margin-left: auto; margin-right: auto; }
+/* Single centered column (not narrowed 2-col, which was wrapping text
+   heavily and overflowing the card's fixed height) */
+.flip-card-back .checklist-centered { column-count: 1; max-width: 280px; margin-left: auto; margin-right: auto; }
 
 /* Text inside the (white) flip-card faces stays dark even on a blue section */
 .section-blue .flip-card-front p,

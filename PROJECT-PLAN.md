@@ -81,6 +81,15 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Fixed a scrollbar bug on the Scam and Online Safety Assistance and
+  Device and Account Organization card backs: `.checklist-centered`
+  (added to visually center these two trimmed lists) was narrowing an
+  already-narrow 2-column layout down to ~85px of usable text per column,
+  which forced heavy line-wrapping and pushed the content past the card's
+  fixed 420px height. Switched `.checklist-centered` to a single centered
+  column instead of a narrowed 2-column one — items get nearly the full
+  card width, so there's little to no wrapping and the content fits
+  without scrolling.
 - Trimmed the two flip-card lists once more (Scam and Online Safety
   Assistance: 7 -> 6 items, now an even 3/3 split; Device and Account
   Organization: 8 -> 7).
