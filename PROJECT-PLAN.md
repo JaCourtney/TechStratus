@@ -81,6 +81,12 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Fixed a sitewide bug: the "Get Started" nav button's text turned blue on
+  hover (against its blue gradient background, effectively invisible)
+  because the generic `.nav-menu a:hover` rule was more specific than the
+  button's own hover color. Added a more specific override
+  (`.nav-menu .nav-cta a:hover`) so it stays white. Affects every page
+  (shared header).
 - Family Tech Support flip-card order and copy: shortened the Child and
   Teen Online Safety narrative to two tight sentences; reordered the cards
   to Child and Teen Online Safety, Support for Parents, Device and Account

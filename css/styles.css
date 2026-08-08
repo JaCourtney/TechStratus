@@ -94,6 +94,7 @@ p  { margin: 0 0 1rem; }
 .nav-menu a { color: var(--slate); font-weight: 600; font-size: .95rem; }
 .nav-menu a:hover { color: var(--blue); }
 .nav-cta a { color: #fff; }
+.nav-menu .nav-cta a:hover { color: #fff; }
 
 .nav-toggle {
   display: none; flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer; padding: 8px;
