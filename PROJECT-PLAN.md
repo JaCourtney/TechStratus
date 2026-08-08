@@ -12,7 +12,7 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 - **Personal Technology** (`personal-technology.html`) — ✅
   - Senior Tech Support (`senior-support.html`) — ✅
   - Family Tech Support (`family-support.html`) — ✅
-  - Home Office Support (`home-office-support.html`) — ⬜
+  - Home Office Support (`home-office-support.html`) — ✅
 - **Business Solutions** (`business-solutions.html`) — ⬜
   - Business IT Services (`business-it-services.html`) — ⬜
   - Digital Presence (`digital-presence.html`) — ⬜
@@ -39,7 +39,6 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       Cloudflare or managed elsewhere (e.g. Hostinger) before doing this.
 
 ### Content still needed
-- [ ] Home Office Support (last of the 3 Personal Technology subpages)
 - [ ] Business Solutions overview + its 4 subpages
 - [ ] About
 - [ ] Contact (decide whether the contact info/form moves here from Home)
@@ -52,8 +51,9 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 - [ ] **Compress images/video** — several assets are large for the web:
       `assets/Stock.png` (~2.9 MB), `assets/hero-video.mp4` (2.4 MB),
       `assets/home-tech.png` (1.7 MB), `assets/senior-support-hero.png` (1.9 MB),
-      `assets/family-support-hero.png` (1.8 MB). Worth a batch pass to shrink
-      these (WebP/optimized MP4) for page speed.
+      `assets/family-support-hero.png` (1.8 MB), `assets/home-office-support-hero.png`
+      (1.6 MB). Worth a batch pass to shrink these (WebP/optimized MP4) for
+      page speed.
 - [ ] **Favicon visibility** — `assets/logo-white.png` is set as the browser-tab
       icon, but it's a white shape on a transparent background, so it may be
       invisible on light-colored tabs. Consider the colored logo instead, or a
@@ -81,6 +81,16 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Built out Home Office Support (last of the 3 Personal Technology
+  subpages) in the now-established pattern: video hero with blue title +
+  subheadline + narrative, Common Challenges with the supplied photo
+  (`home-office-support-hero.png`) side-by-side with the checklist, 5-card
+  Services Offered, 5 deep-dive sections merged into flip cards (Workspace
+  Optimization, Networking and Connectivity, Data Protection and Backup,
+  Security and Account Management, Remote Work Support), 3-card Appointment
+  Options, 5-item FAQ, closing CTA. Restore point tagged:
+  `home-office-support-before-build`. This completes all 3 Personal
+  Technology subpages.
 - Fixed a sitewide bug: the "Get Started" nav button's text turned blue on
   hover (against its blue gradient background, effectively invisible)
   because the generic `.nav-menu a:hover` rule was more specific than the
