@@ -503,14 +503,17 @@ p  { margin: 0 0 1rem; }
 .section-blue .tile:hover { box-shadow: 0 16px 40px rgba(255,255,255,.5); }
 
 /* =========================================================
-   Why section, 5-card responsive variant (distinct from the
-   homepage's fixed 3-column .commitments grid)
+   Why section / Services Offered, 5-card responsive variant
+   (distinct from the homepage's fixed 3-column .commitments grid).
+   Flexbox rather than grid auto-fit: a short last row (e.g. 2 left
+   over from 5 cards) gets centered as its own row instead of one
+   card stretching to fill, or sitting stranded on the left.
    ========================================================= */
 .why-grid {
   list-style: none; padding: 0; margin: 0 auto; max-width: 1040px;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.75rem;
-  justify-content: center;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem;
 }
+.why-grid > * { flex: 0 1 300px; }
 
 /* =========================================================
    Closing call-to-action band

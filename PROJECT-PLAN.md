@@ -81,6 +81,15 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Trimmed the two flip-card lists once more (Scam and Online Safety
+  Assistance: 7 -> 6 items, now an even 3/3 split; Device and Account
+  Organization: 8 -> 7).
+- Fixed `.why-grid` (used by Senior/Family Support's "Services Offered" and
+  Personal Technology's "Why TechStratus?", all 5-card sections): switched
+  from CSS grid auto-fit to flexbox with a capped card width. Grid's
+  auto-fit left a lone 5th card stranded on the left of an otherwise-empty
+  row; flexbox centers a short last row instead, so 5 cards read as a clean
+  centered 3+2 everywhere `.why-grid` is used, not just on this page.
 - Trimmed two of the four flip cards further: shortened the Scam and Online
   Safety Assistance narrative; removed 2 items from its back list (9 -> 7)
   and 1 item from Device and Account Organization's (9 -> 8); both trimmed
