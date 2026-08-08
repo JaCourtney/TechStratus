@@ -81,6 +81,14 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Family Tech Support tweaks: swapped the Services Offered "Home Network
+  and Wi-Fi Support" card icon from the reused check-circle placeholder to
+  an actual Wi-Fi icon (scoped to just this card; Senior Support's "Home
+  Wi-Fi Support" and Personal Technology's "Wi-Fi Support" tile still use
+  the check-circle and weren't touched). Removed the first of three
+  paragraphs from the Child and Teen Online Safety flip card's front (down
+  to 2, matching the other cards). Swapped the flip-card order so Family
+  Technology Education comes before Child and Teen Online Safety.
 - Brought Family Tech Support's five deep-dive sections (Child and Teen
   Online Safety, Family Technology Education, Device and Account
   Organization, Home Network and Wi-Fi Support, Support for Parents) into
