@@ -464,20 +464,8 @@ p  { margin: 0 0 1rem; }
   .dropdown a { padding: .5rem 0; }
 }
 
-/* =========================================================
-   Landing-page hero (title + sub-headline + button row, no video)
-   ========================================================= */
-.mini-hero {
-  text-align: center;
-  background: linear-gradient(160deg, var(--bg-alt), #fff);
-  padding-top: clamp(4rem, 8vw, 6rem);
-  padding-bottom: clamp(3rem, 6vw, 5rem);
-}
-.mini-hero-content { max-width: 720px; margin: 0 auto; }
-.mini-hero-sub {
-  font-size: clamp(1.1rem, 2vw, 1.35rem); color: var(--blue); font-weight: 600;
-  margin: .25rem 0 1.75rem;
-}
+/* Generic "make this heading blue" utility */
+.text-blue { color: var(--blue); }
 
 /* =========================================================
    Common-services tile grid (compact icon + label cards)

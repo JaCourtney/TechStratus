@@ -81,6 +81,14 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Personal Technology page: hero switched from the text-only gradient
+  ("mini-hero") to the same looping video used everywhere else. "Personal
+  Technology Support" (h1) is now blue via the shared `.hero-title-accent`
+  class; "Patient and Practical" (subheadline) uses the shared `.hero-sub`
+  default color (slate/grey), matching Senior/Family's subheadlines. Added
+  a new small `.text-blue` utility and applied it to "Technology should
+  work for you" in the intro section. Removed the now-unused
+  `.mini-hero`/`.mini-hero-sub` CSS (no other page referenced them).
 - Built out Home Office Support (last of the 3 Personal Technology
   subpages) in the now-established pattern: video hero with blue title +
   subheadline + narrative, Common Challenges with the supplied photo
