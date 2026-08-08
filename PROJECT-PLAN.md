@@ -81,6 +81,11 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Family Tech Support flip-card order and copy: shortened the Child and
+  Teen Online Safety narrative to two tight sentences; reordered the cards
+  to Child and Teen Online Safety, Support for Parents, Device and Account
+  Organization, Home Network and Wi-Fi Support, Family Technology
+  Education.
 - Family Tech Support tweaks: swapped the Services Offered "Home Network
   and Wi-Fi Support" card icon from the reused check-circle placeholder to
   an actual Wi-Fi icon (scoped to just this card; Senior Support's "Home
