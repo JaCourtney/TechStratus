@@ -81,6 +81,19 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Brought Family Tech Support's five deep-dive sections (Child and Teen
+  Online Safety, Family Technology Education, Device and Account
+  Organization, Home Network and Wi-Fi Support, Support for Parents) into
+  the same flip-card treatment as Senior Tech Support: merged into one blue
+  section, front = title (blue, bigger) + narrative + "Click to See How We
+  Help" hint, back = lead-in label + checklist (closing sentence removed).
+  List items were NOT trimmed here (that was specific to Senior's cards) —
+  all original checklist content kept as-is.
+  `.flip-grid` switched from a fixed 2-column grid to flexbox (matching the
+  `.why-grid` fix) so 5 cards wrap as a centered 2+2+1 instead of stranding
+  the 5th card; Senior's 4-card 2x2 is unchanged (486px card width still
+  fits exactly 2 per row). Restore point tagged:
+  `family-support-before-flip-cards`.
 - Fixed a scrollbar bug on the Scam and Online Safety Assistance and
   Device and Account Organization card backs: `.checklist-centered`
   (added to visually center these two trimmed lists) was narrowing an
