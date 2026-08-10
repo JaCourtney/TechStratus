@@ -88,6 +88,20 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Converted the Business IT Services "Our Services" grid from plain
+  cards to flip cards (hover on desktop, tap/focus on mobile), matching
+  Senior/Family/Home Office Support's flip-card pattern. Front now
+  shows icon + title + the two intro paragraphs + "Click to See How We
+  Help" hint; back shows the eyebrow + checklist. Dropped the closing
+  paragraph that followed each list (per instruction). Added the icon
+  to the front for the first time in this component (existing flip
+  cards elsewhere have no icon) via a new `.flip-card-front-content
+  .card-icon { margin: 0 auto 1.25rem; }` rule. Also discovered the
+  shared 420px `min-height` was too short once an icon and two full
+  paragraphs were added — every card overflowed on both faces. Fixed
+  with a page-scoped `.flip-grid-tall` modifier (560px min-height)
+  rather than changing the shared 420px default used by the other
+  three flip-card pages.
 - Built the Business IT Services subpage (first of Business Solutions'
   4 subpages), following the same layout family as the Personal
   Technology subpages: video hero (title, subheadline, 3 paragraphs,
