@@ -13,8 +13,8 @@ Legend: ✅ built out · ⬜ blank stub (title only)
   - Senior Tech Support (`senior-support.html`) — ✅
   - Family Tech Support (`family-support.html`) — ✅
   - Home Office Support (`home-office-support.html`) — ✅
-- **Business Solutions** (`business-solutions.html`) — ✅ (overview page; 4 subpages still blank)
-  - Business IT Services (`business-it-services.html`) — ⬜
+- **Business Solutions** (`business-solutions.html`) — ✅ (overview page; 3 subpages still blank)
+  - Business IT Services (`business-it-services.html`) — ✅
   - Digital Presence (`digital-presence.html`) — ⬜
   - AI & Automation (`ai-automation.html`) — ⬜
   - Technology Consulting (`technology-consulting.html`) — ⬜
@@ -39,8 +39,8 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       Cloudflare or managed elsewhere (e.g. Hostinger) before doing this.
 
 ### Content still needed
-- [ ] Business Solutions's 4 subpages (Business IT Services, Digital
-      Presence, AI & Automation, Technology Consulting)
+- [ ] Business Solutions's remaining 3 subpages (Digital Presence,
+      AI & Automation, Technology Consulting)
 - [ ] About
 - [ ] Contact (decide whether the contact info/form moves here from Home)
 - [ ] Resources overview + its 4 subpages
@@ -88,6 +88,19 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Built the Business IT Services subpage (first of Business Solutions'
+  4 subpages), following the same layout family as the Personal
+  Technology subpages: video hero (title, subheadline, 3 paragraphs,
+  2 buttons), a 9-card "Our Services" grid (3x3, `.cards-3`, on
+  `.section-blue`, plain non-flipping cards since the content per
+  topic was too dense for the flip-card format used on Senior/Family/
+  Home Office Support), a 3-tier "Managed Service Plans" card grid
+  (Essential/Managed/Complete), a 7-item FAQ accordion, and a closing
+  CTA. Single-column checklists throughout (matching the established
+  cards-3 width convention) rather than the 2-column variant used in
+  wider cards elsewhere. All 9 service topics and 3 plan tiers came
+  from the user's supplied copy verbatim; icons reused from the
+  existing icon library rather than hand-authoring new SVG paths.
 - Who These Services Are For (Business Solutions): 10 tiles in a
   4-column grid stranded the last row (2 tiles) on the left. Switched
   `.tile-grid` from CSS Grid to flexbox with `justify-content: center`
