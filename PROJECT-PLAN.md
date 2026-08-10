@@ -53,12 +53,13 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       `assets/Stock.png` (~2.9 MB), `assets/hero-video.mp4` (2.4 MB),
       `assets/home-tech.png` (1.7 MB), `assets/senior-support-hero.png` (1.9 MB),
       `assets/family-support-hero.png` (1.8 MB), `assets/home-office-support-hero.png`
-      (1.6 MB), `assets/business-solutions-hero.png` (2.0 MB). Worth a batch
+      (1.6 MB), `assets/business-solutions-hero.png` (2.0 MB),
+      `assets/business-it-services-hero.png` (2.1 MB). Worth a batch
       pass to shrink these (WebP/optimized MP4) for page speed.
-- [ ] **Duplicate image file**: `assets/TechStratus-Business-Tech.png` (the
+- [ ] **Duplicate image file**: `assets/Business-IT-services-image.png` (the
       original, mixed-case file the user placed in the project) is still
       sitting untracked in `assets/` — its content was copied to
-      `business-solutions-hero.png` (lowercase, matching the site's naming
+      `business-it-services-hero.png` (lowercase, matching the site's naming
       convention) which is what the page actually uses. The original is
       unused; ask before deleting it since it wasn't created this session.
 - [ ] **Favicon visibility** — `assets/logo-white.png` is set as the browser-tab
@@ -88,6 +89,21 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Restored the closing paragraph on each Business IT Services flip-card
+  back (removed in the prior pass, added back per follow-up request).
+  Continuous Device Monitoring has two closing paragraphs, same as the
+  original plain-card version. This pushed 1 of the 9 cards (the one
+  with two closing paragraphs) past the 560px flip-card height set in
+  the last pass, so bumped `.flip-grid-tall .flip-card` to 640px and
+  re-verified all 9 cards for overflow on both faces (none). Also added
+  a new white "A Complete IT Partner for Your Organization" overview
+  section right after the hero (photo + text, `.section.about` /
+  `.about-grid`, matching Business Solutions' overview section pattern)
+  using `assets/business-it-services-hero.png` (copied from the user's
+  `Business-IT-services-image.png`, lowercase-hyphenated per site
+  convention) with new summary copy synthesized from the 9 services
+  below it (not verbatim user copy, since none was given for this
+  section).
 - Converted the Business IT Services "Our Services" grid from plain
   cards to flip cards (hover on desktop, tap/focus on mobile), matching
   Senior/Family/Home Office Support's flip-card pattern. Front now
