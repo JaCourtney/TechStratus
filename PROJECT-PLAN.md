@@ -89,6 +89,20 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Corrected an overcorrection: the prior pass had consolidated the
+  front and back text on all 9 Business IT Services flip-cards and
+  shrunk them to 420px, but the user only wanted the one card that
+  actually forced the 560px -> 640px jump (Continuous Device
+  Monitoring, which has two closing-paragraph sentences) trimmed.
+  Restored the original two front paragraphs and full closing text on
+  the other 8 cards, consolidated only Continuous Device Monitoring's
+  two closing sentences into one, restored the card height to 560px
+  (`.flip-grid-tall`), and removed the padding/margin tightening added
+  for the 420px squeeze (no longer needed at 560px). Kept the
+  `.section-blue .flip-card-back p` color-fix from the previous pass,
+  since that was a genuine bug (invisible white-on-white text) rather
+  than something the user asked to revert. Verified all 9 cards fit at
+  exactly 560px with zero overflow on both faces.
 - Reverted Business IT Services' flip-cards to the original shared
   size (486x420, matching Senior/Family/Home Office Support) instead of
   the taller 640px variant from the previous pass. Consolidated each
