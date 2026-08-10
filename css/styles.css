@@ -149,7 +149,7 @@ p  { margin: 0 0 1rem; }
 
 /* ---------- Cards ---------- */
 .cards { display: grid; gap: var(--gap); }
-.cards-2 { grid-template-columns: repeat(2, 1fr); }
+.cards-2 { grid-template-columns: repeat(2, 1fr); max-width: 920px; margin: 0 auto; }
 .cards-3 { grid-template-columns: repeat(3, 1fr); }
 .card {
   background: var(--white); color: var(--slate); border: 1px solid var(--border); border-radius: var(--radius);
@@ -421,7 +421,8 @@ p  { margin: 0 0 1rem; }
 .section-blue .card p,
 .section-blue .card .muted-line,
 .section-blue .card .checklist li,
-.section-blue .faq-item p { color: var(--slate); }
+.section-blue .faq-item p,
+.section-blue .commitment p { color: var(--slate); }
 .section-blue .card .eyebrow { color: var(--blue); }
 
 /* =========================================================
