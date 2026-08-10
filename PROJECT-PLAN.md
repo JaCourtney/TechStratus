@@ -88,6 +88,14 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Who These Services Are For (Business Solutions): 10 tiles in a
+  4-column grid stranded the last row (2 tiles) on the left. Switched
+  `.tile-grid` from CSS Grid to flexbox with `justify-content: center`
+  (same fix pattern as `.why-grid`/`.flip-grid`), so the short last row
+  centers itself. Also fixed a specificity bug where `.section-head p`'s
+  `margin: 0` was crushing the "These services are especially valuable
+  for" eyebrow line up against the paragraph above it with no gap;
+  added `.section-head .eyebrow` to restore its intended top margin.
 - Business Solutions polish: removed the four narrative paragraphs
   from the hero (kept subheadline + buttons); added "Google Workspace
   Administration" to the Business IT Services checklist next to
