@@ -88,6 +88,23 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Business Solutions polish: removed the four narrative paragraphs
+  from the hero (kept subheadline + buttons); added "Google Workspace
+  Administration" to the Business IT Services checklist next to
+  Microsoft 365 administration; swapped "Cybersecurity improvements"
+  and "Managed IT services" in that same checklist; capped the
+  Business Solution Categories card grid at a 920px max-width so it's
+  centered instead of stretching edge-to-edge. Also fixed a real CSS
+  specificity bug: Engagement Options' `.commitment` cards have white
+  backgrounds sitting on the blue `.section-blue` section, and
+  `.section-blue p` (white text) was tying in specificity with
+  `.commitment p` (muted grey text) and winning on source order,
+  making the descriptor paragraphs invisible (white on white). Added
+  `.section-blue .commitment p { color: var(--slate); }` to fix it,
+  matching the existing `.card` override pattern. Worth checking any
+  future `.commitment`-in-`.section-blue` combination for the same
+  issue (index.html and personal-technology.html's commitment cards
+  are currently in white, non-blue sections, so unaffected).
 - Removed the "Home" and "Contact" text links from the top nav menu
   (`.nav-menu`) across all 17 pages. The logo already links home, and
   the "Get Started" button already links to contact.html, so both
