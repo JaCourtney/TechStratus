@@ -88,6 +88,11 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Removed the "Home" and "Contact" text links from the top nav menu
+  (`.nav-menu`) across all 17 pages. The logo already links home, and
+  the "Get Started" button already links to contact.html, so both
+  links were redundant. Footer nav (`.footer-nav`) still has both,
+  untouched, since the user's request was scoped to the top menu only.
 - Built the Business Solutions overview page, following Personal
   Technology's layout: video hero (blue title, grey subheadline, 4
   narrative paragraphs), Business Technology Overview (photo + text,
