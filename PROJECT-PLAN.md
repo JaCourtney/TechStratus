@@ -13,7 +13,7 @@ Legend: ✅ built out · ⬜ blank stub (title only)
   - Senior Tech Support (`senior-support.html`) — ✅
   - Family Tech Support (`family-support.html`) — ✅
   - Home Office Support (`home-office-support.html`) — ✅
-- **Business Solutions** (`business-solutions.html`) — ⬜
+- **Business Solutions** (`business-solutions.html`) — ✅ (overview page; 4 subpages still blank)
   - Business IT Services (`business-it-services.html`) — ⬜
   - Digital Presence (`digital-presence.html`) — ⬜
   - AI & Automation (`ai-automation.html`) — ⬜
@@ -39,7 +39,8 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       Cloudflare or managed elsewhere (e.g. Hostinger) before doing this.
 
 ### Content still needed
-- [ ] Business Solutions overview + its 4 subpages
+- [ ] Business Solutions's 4 subpages (Business IT Services, Digital
+      Presence, AI & Automation, Technology Consulting)
 - [ ] About
 - [ ] Contact (decide whether the contact info/form moves here from Home)
 - [ ] Resources overview + its 4 subpages
@@ -52,8 +53,14 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       `assets/Stock.png` (~2.9 MB), `assets/hero-video.mp4` (2.4 MB),
       `assets/home-tech.png` (1.7 MB), `assets/senior-support-hero.png` (1.9 MB),
       `assets/family-support-hero.png` (1.8 MB), `assets/home-office-support-hero.png`
-      (1.6 MB). Worth a batch pass to shrink these (WebP/optimized MP4) for
-      page speed.
+      (1.6 MB), `assets/business-solutions-hero.png` (2.0 MB). Worth a batch
+      pass to shrink these (WebP/optimized MP4) for page speed.
+- [ ] **Duplicate image file**: `assets/TechStratus-Business-Tech.png` (the
+      original, mixed-case file the user placed in the project) is still
+      sitting untracked in `assets/` — its content was copied to
+      `business-solutions-hero.png` (lowercase, matching the site's naming
+      convention) which is what the page actually uses. The original is
+      unused; ask before deleting it since it wasn't created this session.
 - [ ] **Favicon visibility** — `assets/logo-white.png` is set as the browser-tab
       icon, but it's a white shape on a transparent background, so it may be
       invisible on light-colored tabs. Consider the colored logo instead, or a
@@ -81,6 +88,17 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Built the Business Solutions overview page, following Personal
+  Technology's layout: video hero (blue title, grey subheadline, 4
+  narrative paragraphs), Business Technology Overview (photo + text,
+  blue h2), Business Solution Categories (4 cards in a 2x2 grid — Business
+  IT Services, Digital Presence, AI and Automation, Technology Consulting —
+  each linking to its subpage), Who These Services Are For (10-tile grid),
+  Engagement Options (5 cards) and Why Work With TechStratus? (6 cards, its
+  existing "Why" pattern), closing CTA. One deliberate repeated white
+  section (Why -> CTA) to keep the CTA contrasting against the always-blue
+  footer, same as the precedent set on Senior Support. Restore point
+  tagged: `business-solutions-before-build`.
 - Personal Technology page: hero switched from the text-only gradient
   ("mini-hero") to the same looping video used everywhere else. "Personal
   Technology Support" (h1) is now blue via the shared `.hero-title-accent`
