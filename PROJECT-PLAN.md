@@ -89,6 +89,21 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Reverted Business IT Services' flip-cards to the original shared
+  size (486x420, matching Senior/Family/Home Office Support) instead of
+  the taller 640px variant from the previous pass. Consolidated each
+  front's two intro paragraphs into one shorter paragraph, and trimmed
+  each back's closing line to a short clause, to fit the restored
+  height. The checklist itself (up to 10 items) was already consuming
+  nearly the entire 420px budget, so text trimming alone wasn't enough
+  for the denser cards — also tightened checklist/eyebrow spacing and
+  back padding, scoped to `#services` only, so the other three
+  flip-card pages are untouched. Verified all 9 cards fit exactly at
+  420px with zero overflow on both faces. Also fixed a real bug: the
+  restored closing paragraph had no `.section-blue` color override, so
+  it inherited white text on top of the flip-card-back's white
+  background (invisible) — added `.section-blue .flip-card-back p` to
+  the existing slate-color override list.
 - Restored the closing paragraph on each Business IT Services flip-card
   back (removed in the prior pass, added back per follow-up request).
   Continuous Device Monitoring has two closing paragraphs, same as the

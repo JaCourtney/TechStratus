@@ -524,7 +524,6 @@ p  { margin: 0 0 1rem; }
   max-width: 1000px; margin: 0 auto;
 }
 .flip-card { flex: 0 1 486px; perspective: 1600px; min-height: 420px; }
-.flip-grid-tall .flip-card { min-height: 640px; }
 .flip-card-inner {
   position: relative; width: 100%; height: 100%;
   transition: transform .6s cubic-bezier(.4, .2, .2, 1);
@@ -562,9 +561,18 @@ p  { margin: 0 0 1rem; }
 
 /* Text inside the (white) flip-card faces stays dark even on a blue section */
 .section-blue .flip-card-front p,
+.section-blue .flip-card-back p,
 .section-blue .flip-card-back .checklist li { color: var(--slate); }
 .section-blue .flip-card-front .eyebrow,
 .section-blue .flip-card-back .eyebrow { color: var(--blue); }
+
+/* Business IT Services: backs carry a closing paragraph after the
+   checklist (unlike the other flip-card pages), so spacing is tightened
+   to fit the original 420px card height rather than growing the card. */
+#services .flip-card-back { padding: 1.5rem 1.75rem; }
+#services .flip-card-back .eyebrow { margin: 0 0 .3rem; }
+#services .flip-card-back ul { margin-bottom: .3rem; }
+#services .flip-card-back .checklist-2col li { margin-bottom: .15rem; }
 
 @media (max-width: 700px) {
   .flip-card { flex-basis: 100%; }
