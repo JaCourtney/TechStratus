@@ -91,6 +91,22 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Made Digital Presence's 3 stacked flip-cards span the full content
+  width (`.container`, ~1116px) instead of the default 486px, so
+  they're wider than tall (landscape) rather than the other way
+  around. `.flip-grid-stacked` now clears its own max-width and forces
+  `flex-basis: 100%` on the cards. At that width the front paragraph
+  text was hitting ~117 characters per line (unreadable), so
+  constrained the inner text/checklist to a 640px centered reading
+  column via `.flip-grid-stacked .flip-card-front-content` and
+  `.flip-grid-stacked .flip-card-back > *` — the visible white card
+  stays full width, only the text column inside is narrower. Confirmed
+  zero overflow on all 3 cards at desktop width; the mobile overflow
+  that shows up at 375px is pre-existing (mobile card width was
+  already governed by the unrelated `flex-basis:100%` responsive rule,
+  unchanged by this edit) and matches the same graceful internal-
+  scroll behavior already present on Senior Support and Business IT
+  Services' mobile flip-cards.
 - Restored the tagline sub-headings ("A Better Home for Your Business
   Online," etc.) on Digital Presence's 3 flip-card fronts, under each
   h3. Added `.card-tagline` styling scoped to `.flip-card-front-content`
