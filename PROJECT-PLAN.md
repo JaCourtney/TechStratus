@@ -91,6 +91,9 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Reverted Digital Presence's stacked cards back to the standard
+  486x560 flip-card size (undoing the prior full-width/1116px pass).
+  `.flip-grid-stacked` is back to just `max-width: 486px`.
 - Made Digital Presence's 3 stacked flip-cards span the full content
   width (`.container`, ~1116px) instead of the default 486px, so
   they're wider than tall (landscape) rather than the other way
