@@ -13,9 +13,9 @@ Legend: ✅ built out · ⬜ blank stub (title only)
   - Senior Tech Support (`senior-support.html`) — ✅
   - Family Tech Support (`family-support.html`) — ✅
   - Home Office Support (`home-office-support.html`) — ✅
-- **Business Solutions** (`business-solutions.html`) — ✅ (overview page; 3 subpages still blank)
+- **Business Solutions** (`business-solutions.html`) — ✅ (overview page; 2 subpages still blank)
   - Business IT Services (`business-it-services.html`) — ✅
-  - Digital Presence (`digital-presence.html`) — ⬜
+  - Digital Presence (`digital-presence.html`) — ✅
   - AI & Automation (`ai-automation.html`) — ⬜
   - Technology Consulting (`technology-consulting.html`) — ⬜
 - **About** (`about.html`) — ⬜
@@ -39,8 +39,8 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       Cloudflare or managed elsewhere (e.g. Hostinger) before doing this.
 
 ### Content still needed
-- [ ] Business Solutions's remaining 3 subpages (Digital Presence,
-      AI & Automation, Technology Consulting)
+- [ ] Business Solutions's remaining 2 subpages (AI & Automation,
+      Technology Consulting)
 - [ ] About
 - [ ] Contact (decide whether the contact info/form moves here from Home)
 - [ ] Resources overview + its 4 subpages
@@ -54,14 +54,16 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       `assets/home-tech.png` (1.7 MB), `assets/senior-support-hero.png` (1.9 MB),
       `assets/family-support-hero.png` (1.8 MB), `assets/home-office-support-hero.png`
       (1.6 MB), `assets/business-solutions-hero.png` (2.0 MB),
-      `assets/business-it-services-hero.png` (2.1 MB). Worth a batch
+      `assets/business-it-services-hero.png` (2.1 MB),
+      `assets/digital-presence-hero.png` (1.7 MB). Worth a batch
       pass to shrink these (WebP/optimized MP4) for page speed.
-- [ ] **Duplicate image file**: `assets/Business-IT-services-image.png` (the
-      original, mixed-case file the user placed in the project) is still
-      sitting untracked in `assets/` — its content was copied to
-      `business-it-services-hero.png` (lowercase, matching the site's naming
-      convention) which is what the page actually uses. The original is
-      unused; ask before deleting it since it wasn't created this session.
+- [ ] **Duplicate image files**: `assets/Business-IT-services-image.png`
+      and `assets/Digital-Presence-image.png` (the original, mixed-case
+      files the user placed in the project) are still sitting untracked
+      in `assets/` — their content was copied to `business-it-services-hero.png`
+      and `digital-presence-hero.png` (lowercase, matching the site's naming
+      convention), which are what the pages actually use. The originals are
+      unused; ask before deleting them since they weren't created this session.
 - [ ] **Favicon visibility** — `assets/logo-white.png` is set as the browser-tab
       icon, but it's a white shape on a transparent background, so it may be
       invisible on light-colored tabs. Consider the colored logo instead, or a
@@ -89,6 +91,39 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Added the 8-item FAQ to Digital Presence, right before the CTA,
+  matching the FAQ-before-CTA convention used on Senior Support and
+  Business IT Services. Since FAQ is always `.section-blue` sitewide
+  and "One Partner for Your Digital Presence" (the section right
+  before it) was already blue, inserting FAQ there would have created
+  two blue sections in a row. Changed "One Partner" to a plain white
+  section instead (removing `section-blue`) so the rhythm reads
+  white -> white -> blue(FAQ) -> white(CTA) — one intentional
+  white/white adjacency, same precedent already used on Business
+  Solutions between its Why and CTA sections.
+- Built the Digital Presence subpage (second of Business Solutions'
+  4 subpages), based on Business IT Services' layout family: video
+  hero, a white photo+text overview section (using
+  assets/digital-presence-hero.png), then three full detailed service
+  sections (Website Design & Development, Branding & Identity, Social
+  Media & Digital Marketing), each with its own two-tier heading
+  (section-head h2 + tagline), narrative, checklist, and an "Explore
+  ... Services" button linking to contact.html (no dedicated subpages
+  exist for these three yet). Used plain sections rather than flip
+  cards here, since each has its own heading/button unlike Business IT
+  Services' 9 uniform topics. Followed by Featured Work (4-tile
+  commitment grid: Websites, Brand Identities, Social Campaigns,
+  Before & After), a 6-step Our Process (reused the `.steps` numbered
+  component, but the shared 4-column desktop grid would strand steps
+  5-6, so added `#process .steps { grid-template-columns: repeat(3,
+  1fr); }` scoped to min-width:901px to leave the existing 2-col/1-col
+  responsive breakpoints untouched), Flexible Ways to Work Together
+  (4-card cards-2 grid, mixed content shapes — one card has no
+  checklist), a closing "One Partner" narrative section, and a final
+  CTA. No FAQ section, since none was supplied for this page. Verified
+  all checklist item counts, section alternation (clean blue/white
+  rhythm), and both grid-stranding fixes (6 steps at 3+3, 4 featured
+  tiles centering their lone 4th item) in the browser.
 - Corrected an overcorrection: the prior pass had consolidated the
   front and back text on all 9 Business IT Services flip-cards and
   shrunk them to 420px, but the user only wanted the one card that

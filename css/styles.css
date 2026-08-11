@@ -181,6 +181,11 @@ p  { margin: 0 0 1rem; }
 
 /* ---------- Steps ---------- */
 .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gap); counter-reset: step; }
+@media (min-width: 901px) {
+  /* Digital Presence's 6-step process divides evenly into 3 columns;
+     the shared 4-column grid would strand the last 2 steps. */
+  #process .steps { grid-template-columns: repeat(3, 1fr); }
+}
 .step { text-align: center; }
 .step-icon {
   width: 84px; height: 84px; margin: 0 auto 1rem;
