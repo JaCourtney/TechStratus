@@ -91,6 +91,30 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Restored the tagline sub-headings ("A Better Home for Your Business
+  Online," etc.) on Digital Presence's 3 flip-card fronts, under each
+  h3. Added `.card-tagline` styling scoped to `.flip-card-front-content`
+  (reusing the existing `.card-tagline` class name, since the original
+  rule required a `.card` ancestor that doesn't exist here) plus a
+  `.section-blue` override so it stays blue rather than picking up the
+  section's white/slate text-color rules. Re-verified all 3 cards still
+  fit exactly at 560px with zero overflow after adding the extra line.
+- Consolidated Digital Presence's three separate service sections
+  (Website Design & Development, Branding & Identity, Social Media &
+  Digital Marketing — previously full alternating-background sections
+  with their own headings and buttons) into one `.flip-grid` section,
+  matching Business IT Services' card mechanism exactly (hover-to-flip
+  on desktop, tap-to-focus on mobile, same 486x560 card size via
+  `.flip-grid-tall`). Added a new `.flip-grid-stacked` modifier
+  (`max-width: 486px`) so the 3 cards stack in a single column instead
+  of wrapping 2-per-row, per the request. Dropped the "Explore ...
+  Services" buttons and the tagline sub-headings (e.g. "A Better Home
+  for Your Business Online"), since the Business IT Services card
+  format doesn't have either — flagged this to the user rather than
+  silently cutting content. Kept all three intro paragraphs on Social
+  Media & Digital Marketing's front (didn't preemptively trim, per
+  earlier feedback); verified zero overflow on all 3 cards without any
+  text changes needed this time.
 - Added the 8-item FAQ to Digital Presence, right before the CTA,
   matching the FAQ-before-CTA convention used on Senior Support and
   Business IT Services. Since FAQ is always `.section-blue` sitewide
