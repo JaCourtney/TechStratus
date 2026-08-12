@@ -13,10 +13,10 @@ Legend: ✅ built out · ⬜ blank stub (title only)
   - Senior Tech Support (`senior-support.html`) — ✅
   - Family Tech Support (`family-support.html`) — ✅
   - Home Office Support (`home-office-support.html`) — ✅
-- **Business Solutions** (`business-solutions.html`) — ✅ (overview page; 2 subpages still blank)
+- **Business Solutions** (`business-solutions.html`) — ✅ (overview page; 1 subpage still blank)
   - Business IT Services (`business-it-services.html`) — ✅
   - Digital Presence (`digital-presence.html`) — ✅
-  - AI & Automation (`ai-automation.html`) — ⬜
+  - AI & Automation (`ai-automation.html`) — ✅
   - Technology Consulting (`technology-consulting.html`) — ⬜
 - **About** (`about.html`) — ⬜
 - **Resources** (`resources.html`) — ⬜
@@ -39,8 +39,7 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       Cloudflare or managed elsewhere (e.g. Hostinger) before doing this.
 
 ### Content still needed
-- [ ] Business Solutions's remaining 2 subpages (AI & Automation,
-      Technology Consulting)
+- [ ] Business Solutions's remaining 1 subpage (Technology Consulting)
 - [ ] About
 - [ ] Contact (decide whether the contact info/form moves here from Home)
 - [ ] Resources overview + its 4 subpages
@@ -55,15 +54,19 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       `assets/family-support-hero.png` (1.8 MB), `assets/home-office-support-hero.png`
       (1.6 MB), `assets/business-solutions-hero.png` (2.0 MB),
       `assets/business-it-services-hero.png` (2.1 MB),
-      `assets/digital-presence-hero.png` (1.7 MB). Worth a batch
+      `assets/digital-presence-hero.png` (1.7 MB),
+      `assets/ai-automation-hero.png` (1.3 MB). Worth a batch
       pass to shrink these (WebP/optimized MP4) for page speed.
-- [ ] **Duplicate image files**: `assets/Business-IT-services-image.png`
-      and `assets/Digital-Presence-image.png` (the original, mixed-case
-      files the user placed in the project) are still sitting untracked
-      in `assets/` — their content was copied to `business-it-services-hero.png`
-      and `digital-presence-hero.png` (lowercase, matching the site's naming
-      convention), which are what the pages actually use. The originals are
-      unused; ask before deleting them since they weren't created this session.
+- [ ] **Duplicate image files**: `assets/Business-IT-services-image.png`,
+      `assets/Digital-Presence-image.png`, and
+      `assets/ai-automation-herp-image.png` (the originals, mixed-case/
+      typo'd files the user placed in the project) are still sitting
+      untracked in `assets/` — their content was copied to
+      `business-it-services-hero.png`, `digital-presence-hero.png`, and
+      `ai-automation-hero.png` (lowercase, matching the site's naming
+      convention, and fixing the "herp" typo on the AI page's file),
+      which are what the pages actually use. The originals are unused;
+      ask before deleting them since they weren't created this session.
 - [ ] **Favicon visibility** — `assets/logo-white.png` is set as the browser-tab
       icon, but it's a white shape on a transparent background, so it may be
       invisible on light-colored tabs. Consider the colored logo instead, or a
@@ -91,6 +94,26 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Built the AI & Automation subpage (third of Business Solutions'
+  4 subpages; only Technology Consulting remains). Unlike the other
+  two, no page copy was supplied this time, only the TechStratus
+  Identity Statement as context — so all body copy is original,
+  written to reflect that document's principles (practical over
+  hyped, conservative commitments, transparent about referring out
+  work beyond a one-person company's capacity, AI as a tool guided by
+  human judgment) rather than the identity statement itself, which
+  reads as an internal philosophy document, not customer-facing copy.
+  Structure is leaner than Business IT Services/Digital Presence since
+  the user was explicit this service has no sub-services: hero,
+  photo+text overview, a single "How TechStratus Can Help" section
+  (9-item checklist built from the 6 items already established on the
+  Business Solutions overview card, expanded), an "Our Approach"
+  section reusing the homepage's existing `.ai-note` responsible-AI
+  callout component, and a closing CTA. No FAQ, since none was
+  supplied (consistent with how Digital Presence shipped without one
+  until the user provided it separately). Image copied from
+  `ai-automation-herp-image.png` to `ai-automation-hero.png` (fixed a
+  typo in the original filename).
 - Reverted Digital Presence's stacked cards back to the standard
   486x560 flip-card size (undoing the prior full-width/1116px pass).
   `.flip-grid-stacked` is back to just `max-width: 486px`.
