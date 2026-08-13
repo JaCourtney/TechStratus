@@ -94,6 +94,30 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Replaced everything on AI & Automation after the "Practical Help,
+  Not Hype" overview with the user's full new content, superseding the
+  earlier "no sub-services" build. This content has 6 distinct,
+  detailed topics (Readiness Assessment, Workplace Integration,
+  Workflow Automation, Prompt Libraries, AI Training, Responsible AI
+  Use), each with its own narrative and 8-10 item checklist, so
+  converted them to a 6-card `.flip-grid` matching Business IT
+  Services' mechanism exactly (same reasoning as Digital Presence's
+  card conversion). Added a "What Could AI Do for Your Business?"
+  section (8-tile `.why-grid`), a 5-step "Our Process" (reused `.steps`,
+  but since Digital Presence already scopes `#process .steps` to 3
+  columns, used a new `#ai-process` id with its own 5-column override
+  to avoid colliding with that existing rule — a real collision risk
+  worth remembering for any future `.steps` page), a 5-item "Flexible
+  Ways to Get Started" (`.why-grid`), the 7-item FAQ, and a new CTA.
+  Dropped the old "How TechStratus Can Help" and "Our Approach"
+  sections entirely since this content supersedes them. One card (AI
+  Readiness & Opportunity Assessment) slightly overflowed its 560px
+  height — trimmed its closing line and shortened one over-long
+  checklist item ("Reviewing basic privacy and security
+  considerations" -> "Basic privacy and security review") rather than
+  touching the other 5 cards, which already fit. Verified all 6 flip-
+  cards, the 8-tile and 5-tile why-grids (last rows centered, not
+  stranded), the 5-column process grid, and the 7 FAQ items.
 - Built the AI & Automation subpage (third of Business Solutions'
   4 subpages; only Technology Consulting remains). Unlike the other
   two, no page copy was supplied this time, only the TechStratus

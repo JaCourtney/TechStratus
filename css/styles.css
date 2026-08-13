@@ -185,6 +185,9 @@ p  { margin: 0 0 1rem; }
   /* Digital Presence's 6-step process divides evenly into 3 columns;
      the shared 4-column grid would strand the last 2 steps. */
   #process .steps { grid-template-columns: repeat(3, 1fr); }
+  /* AI & Automation's 5-step process: the shared 4-column grid would
+     strand the last step alone in its own row. */
+  #ai-process .steps { grid-template-columns: repeat(5, 1fr); }
 }
 .step { text-align: center; }
 .step-icon {
