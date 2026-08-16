@@ -13,11 +13,11 @@ Legend: ✅ built out · ⬜ blank stub (title only)
   - Senior Tech Support (`senior-support.html`) — ✅
   - Family Tech Support (`family-support.html`) — ✅
   - Home Office Support (`home-office-support.html`) — ✅
-- **Business Solutions** (`business-solutions.html`) — ✅ (overview page; 1 subpage still blank)
+- **Business Solutions** (`business-solutions.html`) — ✅ (overview page; all 4 subpages built)
   - Business IT Services (`business-it-services.html`) — ✅
   - Digital Presence (`digital-presence.html`) — ✅
   - AI & Automation (`ai-automation.html`) — ✅
-  - Technology Consulting (`technology-consulting.html`) — ⬜
+  - Technology Consulting (`technology-consulting.html`) — ✅
 - **About** (`about.html`) — ⬜
 - **Resources** (`resources.html`) — ⬜
   - Frequently Asked Questions (`faq.html`) — ⬜
@@ -39,7 +39,6 @@ Legend: ✅ built out · ⬜ blank stub (title only)
       Cloudflare or managed elsewhere (e.g. Hostinger) before doing this.
 
 ### Content still needed
-- [ ] Business Solutions's remaining 1 subpage (Technology Consulting)
 - [ ] About
 - [ ] Contact (decide whether the contact info/form moves here from Home)
 - [ ] Resources overview + its 4 subpages
@@ -94,6 +93,25 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Built the Technology Consulting subpage — the last of Business
+  Solutions' 4 subpages, so all of Business Solutions is now built
+  out. Same pattern as AI & Automation: 9 detailed topics (Technology
+  Assessments, Technology Planning, Software and Platform Selection,
+  Cloud Strategy and Migration Planning, AI and Emerging Technology
+  Strategy, Technology Budgeting and Procurement, Vendor and Project
+  Coordination, Digital Transformation, Fractional Technology
+  Leadership) converted to a 9-card `.flip-grid` matching Business IT
+  Services exactly. No image was supplied this time, so the overview
+  section ("Technology Strategy for Small Organizations") is text-only
+  — no `.about-grid`/photo, just a `.container-narrow` block, flagged
+  to the user. Added a new small `.compare-grid` CSS utility (a plain
+  2-column grid, 1-column on mobile) for "How Technology Consulting
+  Differs From Managed IT," a two-list side-by-side comparison that
+  didn't fit any existing component. All 9 flip-cards fit at 560px
+  with zero overflow on the first pass, no trimming needed this time.
+  Verified checklist counts, grid centering (9-card grid's lone last
+  card, 5-tile engagement grid's last row), section alternation, and
+  mobile collapse for both the flip-grid and the new compare-grid.
 - Replaced everything on AI & Automation after the "Practical Help,
   Not Hype" overview with the user's full new content, superseding the
   earlier "no sub-services" build. This content has 6 distinct,
