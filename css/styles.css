@@ -393,6 +393,7 @@ p  { margin: 0 0 1rem; }
    ========================================================= */
 .section-blue { background: var(--blue); color: #fff; }
 .section-blue .section-head h2 { color: #fff; }
+.section-blue .owner-name { color: #fff; }
 .section-blue .section-head p { color: rgba(255,255,255,.9); }
 
 /* Service-group headings on blue */

@@ -18,7 +18,7 @@ Legend: ✅ built out · ⬜ blank stub (title only)
   - Digital Presence (`digital-presence.html`) — ✅
   - AI & Automation (`ai-automation.html`) — ✅
   - Technology Consulting (`technology-consulting.html`) — ✅
-- **About** (`about.html`) — ⬜
+- **About** (`about.html`) — ✅
 - **Resources** (`resources.html`) — ⬜
   - Frequently Asked Questions (`faq.html`) — ⬜
   - Technology Guides (`technology-guides.html`) — ⬜
@@ -93,6 +93,35 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Built the About page. No image was supplied, so the whole page is
+  text-only (unlike every other page built this session, which had at
+  least one photo) — flagged to the user. Structure: hero, "The
+  TechStratus Story" narrative, "Meet the Owner" (a first-person bio
+  from Jacob, preserved in first person exactly as given, since the
+  rest of the site writes in third person/"you" — this section is
+  meant to read as him speaking directly), a "Professional Development
+  & Certifications" section that's explicitly a placeholder template
+  ("can be listed here as they are earned or maintained") rather than
+  real current credentials, "The TechStratus Approach" (6-card
+  why-grid), "Who TechStratus Serves" (5-card why-grid), "Local
+  Service. Remote Capability." (reused the `.compare-grid` utility
+  from Technology Consulting for the local-vs-remote service lists),
+  "Trust Matters" (5-card why-grid), "One Technology Partner" (reused
+  the homepage's existing `.brand-promise` component for the "Personal
+  Technology. Business IT..." highlighted line), and a closing CTA
+  that's also first-person ("Tell me what you are trying to
+  accomplish"), matching the owner-bio tone. Caught and fixed a real
+  bug before shipping: a bare `<h3>Jacob Courtney</h3>` on the blue
+  "Meet the Owner" section rendered in dark slate, not the white text
+  you'd expect from the blue background — a base `h1, h2, h3, h4 {
+  color: var(--ink) }` rule was winning over inheritance from
+  `.section-blue`'s white text color, since a direct rule match always
+  beats inherited color regardless of specificity. Added a scoped
+  `.owner-name` class + `.section-blue .owner-name { color: #fff }`
+  override. Verified all 3 why-grids (6/5/5 items) center their last
+  row correctly, section alternation has zero repeated adjacencies,
+  and the commitment cards' white boxes correctly show dark text even
+  on the blue sections.
 - Built the Technology Consulting subpage — the last of Business
   Solutions' 4 subpages, so all of Business Solutions is now built
   out. Same pattern as AI & Automation: 9 detailed topics (Technology
