@@ -93,6 +93,33 @@ Legend: ✅ built out · ⬜ blank stub (title only)
 
 ## Change log
 
+- Rebuilt the homepage's "Our Services" section, which still described
+  the site's pre-rebuild structure (Personal Tech Support / Business
+  Tech Support / Marketing Support, with old service names like "Cloud
+  Migration Services" and "Marketing Asset Creation" that no longer
+  exist anywhere else on the site). Replaced it with two groups that
+  match the actual current structure: Personal Technology (3 cards,
+  content copied verbatim from personal-technology.html's own preview
+  cards for consistency) and Business Solutions (4 cards, condensed
+  from business-solutions.html's category cards down to a single intro
+  sentence + 5-item highlights list each, written fresh since the full
+  2-paragraph versions were too long for a homepage teaser). Each card
+  links to its real subpage now (previously all cards linked to
+  `#contact`/`#services` anchors on the homepage itself). Added a "See
+  all [X]" link under each group pointing to personal-technology.html
+  and business-solutions.html. Updated the title tag, meta description,
+  og tags, hero pill, and hero subheadline to drop the "& Marketing"
+  framing (marketing is now one of four items under Business
+  Solutions' Digital Presence, not a co-equal pillar), and corrected
+  one outdated FAQ answer that still said "cloud migration, websites,
+  social media, and marketing materials." Left the "Trusted Technology
+  Support in Missoula, Montana" section completely untouched per
+  explicit instruction, and left "Why TechStratus," the contact
+  section, and the footer alone since they weren't tied to the
+  outdated structure. Verified both card grids (3-card and 2x2)
+  render with no stranding, all colors resolve correctly, and no
+  stale references to the old service names remain anywhere in the
+  file.
 - Built the About page. No image was supplied, so the whole page is
   text-only (unlike every other page built this session, which had at
   least one photo) — flagged to the user. Structure: hero, "The
